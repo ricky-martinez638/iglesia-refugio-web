@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio - Iglesia Refugio de Dios</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="./imagenes/logo.refugio.png" type="image/png">
+  <!-- Font Awesome para íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+   <header>
+    <div class="top-logo">
+      <img src="./imagenes/logo.refugio.png" alt="Logo RDD" class="logo-img">
+      <h1>Refugio de Dios</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+<nav class="navbar" id="navbar">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sosnuevo.html">¿Sos nuevo?</a></li>
+    <li><a href="nuestrospastores.html">Nuestros pastores</a></li>
+    <li><a href="escuela.html">Escuela</a></li>
+    <li><a href="predicas.html" class="activo">Prédicas</a></li>
+    <li><a href="horarios.html">Horarios</a></li>
+    <li><a href="libros.html">Libros</a></li>
+    <li><a href="donar.html" class="btn-donar">DONAR</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main class="contenedor-principal">
+    <section class="seccion-predica">
+      <h1>📺 Prédicas del Ministerio</h1>
+      <p>Te invitamos a suscribirte de manera gratuita a nuestro canal de YouTube, donde podrás disfrutar de nuestros servicios en vivo, prédicas, música instrumental y mucho contenido que será de bendición para tu vida.</p>
+
+      <div class="video-youtube">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/_wv0DfKDcmA" title="Video de muestra" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="boton-suscribirse">
+        <a href="#" target="_blank">🔔 SUSCRIBIRSE</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= PIE DE PÁGINA ======= -->
+<footer class="footer-multiseccion">
+  <div class="footer-contenedor">
+    <div class="footer-col footer-logo-col">
+      <img src="./imagenes/logo.refugio.png" alt="Logo Refugio de Dios" class="logo-footer-img">
+    </div>
+    <div class="footer-col">
+      <h4>UBICACIÓN</h4>
+      <p>Av. Eva Perón 2675<br>Lanús, Buenos Aires<br>Argentina</p>
+    </div>
+    <div class="footer-col">
+      <h4>DÍAS Y HORARIOS</h4>
+      <p>Reuniones Generales<br>Miércoles 19:30 hs<br>Domingos 11:00 hs<br><br>Reuniones de jóvenes<br>Sábados 19:30 hs</p>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS ENLACES</h4>
+      <a href="index.html">Inicio</a><br>
+      <a href="sosnuevo.html">¿Sos nuevo?</a><br>
+      <a href="nuestrospastores.html">Nuestros pastores</a><br>
+      <a href="escuela.html">Escuela</a><br>
+      <a href="predicas.html">Prédicas</a><br>
+      <a href="horarios.html">Horarios</a><br>
+      <a href="libros.html">Libros</a><br>
+      <a href="donar.html">Donar</a>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS INFORMACIÓN</h4>
+      <p>Registro de Culto n° 5456<br>
+      Asociación Civil “Refugio de Dios”<br>
+      CUIT 30-71646927-8</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>informacion@refugiodedios.com.ar</p>
+    <div class="footer-redes">
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/refugiodediosargentina/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100064457119450" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("mostrar");
+  }
+</script>
+
+<script src="./scripts/script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio - Iglesia Refugio de Dios</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="./imagenes/logo.refugio.png" type="image/png">
+  <!-- Font Awesome para íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="top-logo">
+      <img src="./imagenes/logo.refugio.png" alt="Logo RDD" class="logo-img">
+      <h1>Refugio de Dios</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+<nav class="navbar" id="navbar">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sosnuevo.html">¿Sos nuevo?</a></li>
+    <li><a href="nuestrospastores.html">Nuestros pastores</a></li>
+    <li><a href="escuela.html">Escuela</a></li>
+    <li><a href="predicas.html">Prédicas</a></li>
+    <li><a href="horarios.html">Horarios</a></li>
+    <li><a href="libros.html">Libros</a></li>
+    <li><a href="donar.html" class="btn-donar">DONAR</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <!-- ===== Comentario: Sección principal de Ayuda de Amor ===== -->
+<section class="ayuda-amor">
+  <h2>🤝 Ayuda de Amor</h2>
+  <p>Estamos para ayudar a quienes lo necesitan. Con amor, entrega y servicio, llevamos esperanza a quienes están atravesando momentos difíciles.</p>
+
+  <div class="ayuda-grid">
+    <div class="ayuda-item">
+      <img src="./imagenes/entregademercaderia.jpg" class="img-popup" alt="Entrega de alimentos">
+      <p>Entrega de alimentos en barrios carenciados.</p>
+    </div>
+    <div class="ayuda-item">
+      <img src="./imagenes/ayudadeamor.jpg" class="img-popup" alt="Acompañamiento familiar">
+      <p>Oración y acompañamiento a familias.</p>
+    </div>
+    <div class="ayuda-item">
+      <img src="./imagenes/voluntariojoven.jpg" class="img-popup" alt="Voluntariado joven">
+      <p>Jóvenes comprometidos sirviendo con alegría.</p>
+    </div>
+  </div>
+
+  <div class="ayuda-sumate">
+    <h3>¡Sumate a esta misión! ❤️</h3>
+    <p>Si querés ayudar o necesitás recibir asistencia, escribinos por WhatsApp. Juntos podemos seguir sembrando amor.</p>
+    <a href="https://wa.me/5491161836534?text=Hola%20quiero%20sumarme%20a%20la%20Ayuda%20de%20Amor" class="btn-wsp" target="_blank">💬 Quiero colaborar</a>
+  </div>
+</section>
+
+
+  <!-- ======= PIE DE PÁGINA ======= -->
+<footer class="footer-multiseccion">
+  <div class="footer-contenedor">
+    <div class="footer-col footer-logo-col">
+      <img src="./imagenes/logo.refugio.png" alt="Logo Refugio de Dios" class="logo-footer-img">
+    </div>
+    <div class="footer-col">
+      <h4>UBICACIÓN</h4>
+      <p>Av. Eva Perón 2675<br>Lanús, Buenos Aires<br>Argentina</p>
+    </div>
+    <div class="footer-col">
+      <h4>DÍAS Y HORARIOS</h4>
+      <p>Reuniones Generales<br>Miércoles 19:30 hs<br>Domingos 11:00 hs<br><br>Reuniones de jóvenes<br>Sábados 19:30 hs</p>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS ENLACES</h4>
+      <a href="index.html">Inicio</a><br>
+      <a href="sosnuevo.html">¿Sos nuevo?</a><br>
+      <a href="nuestrospastores.html">Nuestros pastores</a><br>
+      <a href="escuela.html">Escuela</a><br>
+      <a href="predicas.html">Prédicas</a><br>
+      <a href="horarios.html">Horarios</a><br>
+      <a href="libros.html">Libros</a><br>
+      <a href="donar.html">Donar</a>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS INFORMACIÓN</h4>
+      <p>Registro de Culto n° 5456<br>
+      Asociación Civil “Refugio de Dios”<br>
+      CUIT 30-71646927-8</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>informacion@refugiodedios.com.ar</p>
+    <div class="footer-redes">
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/refugiodediosargentina/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100064457119450" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MODAL IMAGEN ===== -->
+<div id="imagenModal" class="modal">
+  <span class="cerrar">&times;</span>
+  <img class="modal-contenido" id="imgAmpliada" alt="Imagen ampliada">
+  <button class="flecha anterior">◀</button>
+  <button class="flecha siguiente">▶</button>
+</div>
+
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("mostrar");
+  }
+</script>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>
+
+

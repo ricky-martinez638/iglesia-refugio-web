@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escuela de Ministerio</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+   <link rel="icon" href="./imagenes/logo.refugio.png" type="image/png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<main>
+
+  <header>
+    <div class="top-logo">
+      <img src="./imagenes/logo.refugio.png" alt="Logo RDD" class="logo-img">
+      <h1>Refugio de Dios</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="versiculo-destacado">
+      <p class="verso">Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.</p>
+      <p class="cita">— Proverbios 22:6</p>
+     </div>
+
+<nav class="navbar" id="navbar">
+  <ul>
+    <li><a href="index.html" >Inicio</a></li>
+    <li><a href="sosnuevo.html">¿Sos nuevo?</a></li>
+    <li><a href="nuestrospastores.html">Nuestros pastores</a></li>
+    <li><a href="escuela.html" class="activo">Escuela</a></li>
+    <li><a href="predicas.html">Prédicas</a></li>
+    <li><a href="horarios.html">Horarios</a></li>
+    <li><a href="libros.html">Libros</a></li>
+    <li><a href="donar.html" class="btn-donar">DONAR</a></li>
+  </ul>
+</nav>
+  </header>
+
+<section class="galeria-escuela">
+  <h2>🎓 Graduación Escuela de Ministerio</h2>
+  <p class="galeria-subtitulo">Un momento inolvidable lleno de fe, alegría y propósito 🙌</p>
+
+  <div class="slider-wrapper">
+    <div class="slider-track">
+      <img src="./imagenes/escuela1.jpeg" class="slide active" alt="Graduación 1" />
+      <img src="./imagenes/escuela2.jpeg" class="slide" alt="Graduación 2" />
+      <img src="./imagenes/escuela3.jpeg" class="slide" alt="Graduación 3" />
+      <img src="./imagenes/escuela4.jpeg" class="slide" alt="Graduación 4" />
+      <img src="./imagenes/escuela5.jpeg" class="slide" alt="Graduación 5" />
+      <img src="./imagenes/escuela6.jpeg" class="slide" alt="Graduación 6" />
+    </div>
+    <button class="slider-btn prev" id="btnPrev">❮</button>
+    <button class="slider-btn next" id="btnNext">❯</button>
+  </div>
+</section>
+
+<section class="info-escuela">
+  <p class="intro-escuela">
+    La Escuela de Ministerio “Refugio de Dios” tiene como propósito formar discípulos sólidos en la Palabra, equipados para servir con amor, excelencia y compromiso. Cada nivel tiene una duración de 1 año y está diseñado para acompañarte en tu crecimiento espiritual y ministerial.
+  </p>
+
+  <div class="niveles-container">
+    <div class="nivel-card">
+      <h3> 📘 Nivel 1</h3>
+      <p>Fundamentos bíblicos y vida cristiana. Te ayudará a conocer a Dios, entender la fe, y establecer bases firmes.</p>
+      <p><strong>Duración:</strong> 1 año</p>
+    </div>
+    <div class="nivel-card">
+      <h3> 📙 Nivel 2</h3>
+      <p>Ministerio práctico, liderazgo y dones. Enfocado en prepararte para servir en distintas áreas de la iglesia.</p>
+      <p><strong>Duración:</strong> 1 año</p>
+    </div>
+    <div class="nivel-card">
+      <h3> 📗 Nivel 3</h3>
+      <p>Avanzado en visión, cobertura y envío. Para aquellos que desean liderar, formar y multiplicar.</p>
+      <p><strong>Duración:</strong> 1 año</p>
+    </div>
+  </div>
+
+  <div class="caja-titulo-formulario">
+  <h3 class="titulo-formulario">📥 Inscribite a la Escuela</h3>
+</div>
+<form onsubmit="enviarPorWhatsApp(event)" class="form-escuela">
+  <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+  <input type="email" id="email" placeholder="Tu email" required>
+  <select id="nivel" required>
+    <option value="">Seleccioná el nivel</option>
+    <option value="Nivel 1">Nivel 1</option>
+    <option value="Nivel 2">Nivel 2</option>
+    <option value="Nivel 3">Nivel 3</option>
+  </select>
+  <textarea id="mensaje" rows="4" placeholder="¿Querés dejarnos un mensaje? (opcional)"></textarea>
+  <button type="submit">Inscribirme por WhatsApp</button>
+</form>
+</section>
+
+</main>
+
+<!-- ======= PIE DE PÁGINA ======= -->
+<footer class="footer-multiseccion">
+  <div class="footer-contenedor">
+    <div class="footer-col footer-logo-col">
+      <img src="./imagenes/logo.refugio.png" alt="Logo Refugio de Dios" class="logo-footer-img">
+    </div>
+    <div class="footer-col">
+      <h4>UBICACIÓN</h4>
+      <p>Av. Eva Perón 2675<br>Lanús, Buenos Aires<br>Argentina</p>
+    </div>
+    <div class="footer-col">
+      <h4>DÍAS Y HORARIOS</h4>
+      <p>Reuniones Generales<br>Miércoles 19:30 hs<br>Domingos 11:00 hs<br><br>Reuniones de jóvenes<br>Sábados 19:30 hs</p>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS ENLACES</h4>
+      <a href="index.html">Inicio</a><br>
+      <a href="sosnuevo.html">¿Sos nuevo?</a><br>
+      <a href="nuestrospastores.html">Nuestros pastores</a><br>
+      <a href="escuela.html">Escuela</a><br>
+      <a href="predicas.html">Prédicas</a><br>
+      <a href="horarios.html">Horarios</a><br>
+      <a href="libros.html">Libros</a><br>
+      <a href="donar.html">Donar</a>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS INFORMACIÓN</h4>
+      <p>Registro de Culto n° 5456<br>
+      Asociación Civil “Refugio de Dios”<br>
+      CUIT 30-71646927-8</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>informacion@refugiodedios.com.ar</p>
+    <div class="footer-redes">
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/refugiodediosargentina/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100064457119450" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("mostrar");
+  }
+</script>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Sos nuevo? - Iglesia Refugio de Dios</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="./imagenes/logo.refugio.png" type="image/png">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- ======= ENCABEZADO ======= -->
+  <header>
+    <div class="top-logo">
+      <img src="./imagenes/logo.refugio.png" alt="Logo RDD" class="logo-img">
+      <h1>Refugio de Dios</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+<nav class="navbar" id="navbar">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="sosnuevo.html" class="activo">¿Sos nuevo?</a></li>
+    <li><a href="nuestrospastores.html">Nuestros pastores</a></li>
+    <li><a href="escuela.html">Escuela</a></li>
+    <li><a href="predicas.html">Prédicas</a></li>
+    <li><a href="horarios.html">Horarios</a></li>
+    <li><a href="libros.html">Libros</a></li>
+    <li><a href="donar.html" class="btn-donar">DONAR</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <!-- ======= PORTADA NUEVOS ======= -->
+    <section class="portada">
+      <img src="./imagenes/sosnuevo.webp" alt="Portada nuevos" class="imagen-portada">
+      <div class="texto-portadsosnuevo">
+        <h2>¿Sos nuevo? ¡Bienvenido a casa!</h2>
+      </div>
+    </section>
+
+    <!-- ======= BIENVENIDA NUEVOS ======= -->
+    <section class="bienvenida">
+      <h2>¡Qué alegría que estés acá!</h2>
+      <p>Queremos que sepas que esta iglesia es tu casa. Si es tu primera vez con nosotros, ¡te damos la más cálida bienvenida!</p>
+      <p>Estamos listos para conocerte, acompañarte y ayudarte a crecer en tu relación con Dios.</p>
+    </section>
+
+    <!-- ======= BLOQUES INFORMATIVOS NUEVOS ======= -->
+    <section class="info-nuevo">
+      <div class="bloque-nuevo">
+        <i class="fas fa-handshake-angle"></i>
+        <h3>Recibimos con amor</h3>
+        <p>Contamos con un equipo listo para ayudarte desde que llegás.</p>
+      </div>
+      <div class="bloque-nuevo">
+        <i class="fas fa-heart"></i>
+        <h3>Ambiente familiar</h3>
+        <p>Nos encanta conocerte y hacerte sentir parte desde el primer momento.</p>
+      </div>
+      <div class="bloque-nuevo">
+        <i class="fas fa-bible"></i>
+        <h3>Palabra de Dios</h3>
+        <p>Escuchá un mensaje claro, actual y lleno de verdad bíblica para tu vida.</p>
+      </div>
+      <div class="bloque-nuevo">
+        <i class="fas fa-users"></i>
+        <h3>Grupos y comunidad</h3>
+        <p>Sumate a un grupo donde puedas compartir, aprender y crecer.</p>
+      </div>
+    </section>
+
+    <!-- ======= SECCIÓN PREGUNTAS FRECUENTES ======= -->
+    <section class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-contenedor">
+        <details>
+          <summary>¿Cuánto dura una reunión en la iglesia?</summary>
+          <p>Aproximadamente 90 minutos, con alabanza, oración y enseñanza bíblica.</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el código de vestimenta?</summary>
+          <p>Vení como te sientas cómodo. Lo importante es tu corazón, no tu ropa.</p>
+        </details>
+        <details>
+          <summary>¿Estoy obligado a dar dinero?</summary>
+          <p>No. Las ofrendas son voluntarias y nunca obligatorias.</p>
+        </details>
+        <details>
+          <summary>¿Hay cuidado de niños?</summary>
+          <p>Sí, tenemos un espacio para niños durante las reuniones generales.</p>
+        </details>
+        <details>
+          <summary>¿Ayudan a la gente con necesidad económica?</summary>
+          <p>Tenemos programas de asistencia solidaria. Consultá con un líder.</p>
+        </details>
+        <details>
+          <summary>¿Cómo me puedo integrar?</summary>
+          <p>Podés sumarte a un grupo o participar en voluntariados.</p>
+        </details>
+        <details>
+          <summary>¿Hay actividades para jóvenes?</summary>
+          <p>Sí, reuniones juveniles todos los sábados 19:30 hs.</p>
+        </details>
+      </div>
+    </section>
+
+<!-- ======== COMENTARIOS O TESTIMONIOS ======= -->
+<section class="testimonios">
+  <h2>Comentarios de personas que vinieron por primera vez</h2>
+
+  <!-- Contenedor de todos los comentarios -->
+  <div id="comentariosGuardados" class="testimonios-contenedor">
+    <!-- Comentarios predefinidos -->
+    <div class="comentario">
+      <p>"Me hicieron sentir en casa desde el primer día. Volveré seguro."</p>
+      <span>- SOFÍA</span>
+    </div>
+    <div class="comentario">
+      <p>"No conocía a nadie y ahora tengo una nueva familia. Gracias!"</p>
+      <span>- MARCOS</span>
+    </div>
+    <div class="comentario">
+      <p>"Sentí mucha paz. Dios me habló justo cuando más lo necesitaba."</p>
+      <span>- VALERIA</span>
+    </div>
+    <!-- Aquí se agregan dinámicamente los nuevos comentarios -->
+  </div>
+</section>
+
+<!-- ======= FORMULARIO PARA DEJAR OPINIÓN ======= -->
+<section class="formulario-comentario">
+  <h3>Dejanos tu opinión 😊</h3>
+  <form id="comentarioForm">
+    <input type="text" id="nombreUsuario" placeholder="Tu nombre" required>
+    <textarea name="comentario" id="comentarioTexto" placeholder="Escribí tu comentario..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+  </main>
+
+<!-- ======= PIE DE PÁGINA ======= -->
+<footer class="footer-multiseccion">
+  <div class="footer-contenedor">
+    <div class="footer-col footer-logo-col">
+      <img src="./imagenes/logo.refugio.png" alt="Logo Refugio de Dios" class="logo-footer-img">
+    </div>
+    <div class="footer-col">
+      <h4>UBICACIÓN</h4>
+      <p>Av. Eva Perón 2675<br>Lanús, Buenos Aires<br>Argentina</p>
+    </div>
+    <div class="footer-col">
+      <h4>DÍAS Y HORARIOS</h4>
+      <p>Reuniones Generales<br>Miércoles 19:30 hs<br>Domingos 11:00 hs<br><br>Reuniones de jóvenes<br>Sábados 19:30 hs</p>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS ENLACES</h4>
+      <a href="index.html">Inicio</a><br>
+      <a href="sosnuevo.html">¿Sos nuevo?</a><br>
+      <a href="nuestrospastores.html">Nuestros pastores</a><br>
+      <a href="escuela.html">Escuela</a><br>
+      <a href="predicas.html">Prédicas</a><br>
+      <a href="horarios.html">Horarios</a><br>
+      <a href="libros.html">Libros</a><br>
+      <a href="donar.html">Donar</a>
+    </div>
+    <div class="footer-col">
+      <h4>MÁS INFORMACIÓN</h4>
+      <p>Registro de Culto n° 5456<br>
+      Asociación Civil “Refugio de Dios”<br>
+      CUIT 30-71646927-8</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>informacion@refugiodedios.com.ar</p>
+    <div class="footer-redes">
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/refugiodediosargentina/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100064457119450" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("mostrar");
+  }
+</script>
+
+ <script src="./scripts/script.js"></script>
+</body>
+</html>
