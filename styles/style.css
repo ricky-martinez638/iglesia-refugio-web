@@ -2242,6 +2242,39 @@ html, body {
   font-size: 1.1rem;
 }
 
+/* ======== AJUSTES SOLO PARA CELULAR ======== */
+@media screen and (max-width: 768px) {
+  .cuadros-bienvenida {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cuadro {
+    width: 90%;
+    max-width: 95%;
+  }
+
+  .cuadro h3 {
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+
+  .slider-novedades {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .slider p {
+    font-size: 1.1rem;
+  }
+}
+
+
 
 
 
