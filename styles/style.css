@@ -2253,28 +2253,35 @@ html, body {
   .cuadro {
     width: 95%;
     max-width: 500px;
-    height: 260px;
+    height: 320px; /* MÁS alto para que no se corte nada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .cuadro img {
-    height: 150px;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
   }
 
-.cuadro h3 {
-  font-size: 1.2rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
-}
-
-  .slider-novedades img {
-    max-width: 100%;
-    height: auto;
+  .cuadro h3 {
+    font-size: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 10px 0;
   }
 
   .slider-novedades {
     padding: 10px;
+  }
+
+  .slider-novedades img {
+    width: 100%;
+    max-height: 300px; /* AGRANDADA */
+    object-fit: cover;
   }
 }
