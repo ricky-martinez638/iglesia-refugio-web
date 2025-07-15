@@ -2261,13 +2261,12 @@ html, body {
     object-fit: cover;
   }
 
-  .cuadro h3 {
+.cuadro h3 {
   font-size: 1.2rem;
-  word-break: break-word; /* Opcional para mejor control */
-  white-space: normal;    /* ← Cambiado acá */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-align: center;
-  overflow: visible;      /* ← Cambiado acá */
-  text-overflow: unset;   /* ← Cambiado acá */
 }
 
   .slider-novedades img {
