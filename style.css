@@ -1,0 +1,2297 @@
+/* ======= ESTILO GENERAL ======= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+   overflow-x: hidden; /* 🔥 ESTA LÍNEA evita que se mueva horizontalmente */
+}
+
+h1, h2, p {
+  margin: 0 0 10px 0;
+}
+
+/* ======= HEADER ======= */
+header {
+  background-color: #800000; /* Bordó */
+  color: white;
+  padding: 10px 20px;
+}
+
+.top-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-logo img {
+  width: 80px;
+  height: 80px;
+  max-width: none;
+  max-height: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ======= PORTADA ======= */
+.portada {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.imagen-portada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-portada {
+  position: absolute;
+  bottom: 240px;  /* Lo subimos un poco para que quede justo encima de las redes */
+  left: 40px;
+  color: white;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.texto-portada h2 {
+  font-size: 1.6rem;
+}
+
+.redes-portada {
+  position: absolute;
+  bottom: 190px;
+  left: 40px;
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+}
+
+.redes-portada a {
+  color: white;
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra para mejor visibilidad */
+}
+
+.redes-portada a:hover {
+  transform: scale(1.2);
+}
+
+/* ======= BIENVENIDA ======= */
+.bienvenida h2 {
+  font-size: 3rem;
+  color: #8B0000; /* bordó que combina con el logo */
+  font-weight: 900;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.bienvenida h2::after {
+  content: " 🙌🏼✨";
+}
+
+.bienvenida p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 10px;
+  line-height: 1.6;
+  font-weight: bold; /* ESTO ES LO QUE LO PONE EN NEGRITA */
+}
+
+
+
+/* ======= TARJETAS DESTACADAS ======= */
+.tarjetas-destacadas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tarjeta {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-tarjeta {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ======= NAVBAR ESTILO MARANATHA CENTRADO ======= */
+header {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.top-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.top-logo h1 {
+  font-size: 1.7rem;
+  font-family: 'Playfair Display', serif;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px;
+  position: relative;
+}
+
+nav a:hover,
+nav a.activo {
+  border-bottom: 2px solid #00bfff; /* celeste claro */
+}
+
+/* Estilo para el botón DONAR */
+.btn-donar {
+  border: 2px solid white;
+  padding: 6px 14px;
+  border-radius: 25px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-donar:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ======= CUADROS DE BIENVENIDA ======= */
+.cuadros-bienvenida {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.cuadro {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cuadro:hover {
+  transform: scale(1.02);
+}
+
+.cuadro img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cuadro h3 {
+  padding: 15px;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* ======= FONDO DEGRADADO ESTILO RDD ======= */
+body {
+  background-color: #e0e0e0; /* gris medio tirando a oscuro */
+  color: #000;
+}
+
+/* ======= SECCIÓN CUADROS DE BIENVENIDA ======= */
+.cuadros-bienvenida {
+  background-color: #cfcfcf; /* gris oscuro pero suave */
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* === VALORES CON FONDO DE BIBLIA === */
+.cuadro-valores {
+  background-image: url('../imagenes/biblia.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 50px 30px;
+  width: 100%;
+  max-width: 850px;
+  margin: 40px auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+}
+
+.cuadro-valores::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.cuadro-valores > * {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.contenido-valores h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.valor-activo h3 {
+  font-size: 1.4rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.valor-activo p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.valor-activo span {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.contenido-valores button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.4rem;
+  margin: 10px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contenido-valores button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+/* ======= ESTILOS PARA LA SECCIÓN DE UBICACIÓN ======= */
+/* Muestra el mapa de la iglesia con diseño centrado y moderno */
+.ubicacion-iglesia {
+  padding: 50px 20px;
+  background-color: #e0e0e0; /* igual que el fondo de las tarjetas */
+}
+
+.ubicacion-iglesia h2 {
+  font-size: 2.5rem;
+  color: #8B0000;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.ubicacion-iglesia h2 span {
+  color: #000;
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.mapa {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 15px;
+}
+
+/* ======= PIE DE PÁGINA MULTISECCIÓN ======= */
+.footer-multiseccion {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+}
+
+.footer-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.footer-col h4 {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+.footer-redes a {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+  color: white;
+}
+
+/* ======= PORTADA SECCIÓN SOS NUEVO ======= */
+.portada {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.imagen-portada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.texto-portadsosnuevo {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+/* ======= BLOQUES INFO NUEVOS ======= */
+.info-nuevo {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.bloque-nuevo {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bloque-nuevo:hover {
+  transform: translateY(-5px);
+}
+
+.bloque-nuevo i {
+  font-size: 2.5rem;
+  color: #8B0000;
+  margin-bottom: 15px;
+}
+
+.bloque-nuevo h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bloque-nuevo p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ======= FAQ - PREGUNTAS FRECUENTES ======= */
+.faq {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.faq-contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-contenedor details {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-contenedor summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.faq-contenedor p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ======= TESTIMONIOS - COMENTARIOS ======= */
+.testimonios {
+  background-color: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.testimonios-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.comentario {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+.comentario p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.comentario span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #8B0000;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-family: 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+}
+
+
+/* ======= ENLACES TARJETAS SIN SUBRAYADO ======= */
+.tarjeta {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tarjeta h3 {
+  text-decoration: none;
+}
+
+/* ======= ESTILO BONITO PARA EL FORMULARIO DE COMENTARIOS ======= */
+.formulario-comentario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.formulario-comentario input[type="text"],
+.formulario-comentario textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.formulario-comentario button {
+  background-color: #8B0000;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-comentario button:hover {
+  background-color: #a10000;
+}
+
+.formulario-comentario {
+  background-color: #eaeaea;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center; /* <-- centrado del título y campos */
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* ======= ESTILO PERSONALIZADO PARA NOMBRES DE COMENTARIOS ======= */
+.comentario span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #8B0000;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-family: 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+}
+
+.imagen-biblia {
+  max-width: 200px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== SECCIÓN NUESTROS PASTORES ====== */
+.seccion-pastores {
+  padding: 60px 20px;
+  background-color: #e1e1e1;
+  text-align: center;
+}
+
+/* Imagen de los pastores principales */
+.imagen-pastores,
+.foto-pastor-hijo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido de la primera sección */
+.contenido-pastores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.texto-pastores {
+  max-width: 600px;
+  text-align: left;
+}
+
+.texto-pastores .cierre {
+  font-style: italic;
+  color: #800000;
+  margin-top: 10px;
+}
+
+/* ====== SECCIÓN PASTOR ASOCIADO ====== */
+.pastor-hijo {
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.pastor-hijo-contenido {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.texto-pastor-hijo {
+  max-width: 550px;
+  text-align: left;
+}
+
+.titulo-pastor-hijo {
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #800000; /* rojo vino más fuerte */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.titulo-seccion {
+  font-size: 32px;
+  color: #600000;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.pastor-hijo {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 60px 20px;
+}
+
+.seccion-pastores {
+  background-color: #d6d6d6; /* Gris más oscuro */
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === ESCUELA DE MINISTERIO === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.galeria-escuela {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e6e6e6; /* mismo gris claro que en pastores */
+  border-radius: 25px;
+  max-width: 900px;
+  margin: 60px auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-escuela h2 {
+  font-size: 2.8rem;
+  color: #8B0000;
+  margin: 40px 0 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.galeria-subtitulo {
+  font-size: 1.2rem;
+  color: #800000;
+  margin-bottom: 30px;
+}
+
+.slider-wrapper {
+  max-width: 550px;  /* más angosto para que se ajuste a la imagen */
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.slider-track {
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.slider-btn:hover {
+  background: rgba(31, 60, 136, 0.9);
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+
+/* === SECCIÓN ESCUELA === */
+.info-escuela {
+  padding: 50px 20px;
+  background-color: #f3f4f6;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro-escuela {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Tarjetas de niveles */
+.niveles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.nivel-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 300px;
+  flex: 1 1 260px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease;
+  text-align: left;
+  border-left: 6px solid #8B0000;
+}
+
+.nivel-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.nivel-card h3 {
+  color: #8B0000;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+
+.nivel-card p {
+  color: #444;
+}
+
+/* Formulario */
+.titulo-formulario {
+  text-align: center;
+  color: #8B0000;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.form-escuela {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-escuela input,
+.form-escuela select,
+.form-escuela textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-escuela button {
+  background-color: #25D366; /* verde WhatsApp */
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-escuela button:hover {
+  background-color: #1ebe5b;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .niveles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-col.footer-logo-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.logo-footer-img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.caja-titulo-formulario {
+  background-color: #d9d9d9; /* gris clarito */
+  padding: 20px 30px;
+  margin: 0 auto 30px;
+  width: fit-content;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(to bottom, #f5f6f8, #e8ecf1);
+}
+
+.versiculo-destacado {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #7b1f1f;
+}
+
+/* ======= PREDICAS ======= */
+.seccion-predica {
+  max-width: 800px;              /* Limita el ancho en pantallas grandes */
+  margin: 60px auto;             /* Centra la sección vertical y horizontalmente */
+  padding: 30px;
+  background-color: #ffffff;     /* Fondo blanco para resaltar */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);  /* Sombra suave */
+  text-align: center;
+}
+
+/* ======= Título de la sección ======= */
+.seccion-predica h2 {
+  font-size: 2.5rem;
+  color: #8B0000;                /* Rojo vino como el resto de tu sitio */
+  margin-bottom: 20px;
+}
+
+/* ======= Párrafo descriptivo ======= */
+.seccion-predica p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ======= Contenedor del video de YouTube ======= */
+.video-youtube iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra para destacar el video */
+}
+
+/* ======= Botón de SUSCRIBIRSE ======= */
+.boton-suscribirse {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #8B0000;    
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+/* Estilo del enlace dentro del botón */
+.boton-suscribirse a {
+  color: #F9C02C;                 /* Texto amarillo para que contraste */
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;      /* ❌ Saca el subrayado */
+  display: inline-block;
+}
+
+/* Hover solo si querés efecto al pasar el mouse */
+.boton-suscribirse a:hover {
+  color: #222;
+}
+
+/* ======= NOVEDADES - SLIDER ======= */
+.slider-novedades {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #e3e3e3; /* gris claro */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.slider-novedades h2 {
+  font-size: 2rem;
+  color: #8B0000;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* SLIDER CONTENEDOR */
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+  
+}
+
+/* SLIDE INDIVIDUAL */
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.slide.activo {
+  display: flex;
+}
+
+/* IMAGEN BIEN GRANDE Y COMPLETA */
+.slide img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* TEXTO DEBAJO DE LA IMAGEN */
+.slide p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #F9C02C;
+  background-color: #8B0000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  max-width: 90%;
+}
+
+/* BOTONES SLIDER */
+.slider button.prev,
+.slider button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.slider button.prev:hover,
+.slider button.next:hover {
+  background-color: #a00000;
+}
+
+.slider button.prev {
+  left: 10px;
+}
+
+.slider button.next {
+  right: 10px;
+}
+
+/* ======= SECCIÓN DE HORARIOS ======= */
+.horarios-reuniones {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f4f4f4; /* fondo gris claro */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ======= TÍTULO PRINCIPAL DE LA SECCIÓN HORARIOS ======= */
+.horarios-reuniones h2 {
+  color: #8B0000;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+/* ======= PÁRRAFO INTRODUCTORIO BAJO EL TÍTULO ======= */
+.intro-horarios {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* ======= CONTENEDOR DE LOS DÍAS ======= */
+.dias-reuniones {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* ======= CADA DÍA CON SU HORARIO Y DESCRIPCIÓN ======= */
+.dia {
+  background-color: white;
+  border-left: 6px solid #8B0000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.dia h3 {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.dia p {
+  margin: 0;
+  color: #555;
+}
+
+/* ======= IMAGEN DE PORTADA DE LA SECCIÓN HORARIOS ======= */
+.imagen-portada-horarios {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ======= SECCIÓN LIBROS ======= */
+.seccion-libros {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ======= TÍTULO DE LA SECCIÓN ======= */
+.seccion-libros h2 {
+  font-size: 2.5rem;
+  color: #8B0000;
+  margin-bottom: 20px;
+}
+
+/* ======= PÁRRAFO INTRODUCTORIO ======= */
+.intro-libros {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* ======= CONTENEDOR DE LIBROS ======= */
+.grid-libros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* ======= CUADRO DE CADA LIBRO ======= */
+.libro {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.libro:hover {
+  transform: translateY(-5px);
+}
+
+/* ======= IMAGEN DEL LIBRO ======= */
+.libro img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ======= TÍTULO DEL LIBRO ======= */
+.libro h3 {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* ======= DESCRIPCIÓN DEL LIBRO ======= */
+.libro p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* ======= BOTÓN DE WHATSAPP ======= */
+.btn-libro {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-libro:hover {
+  background-color: #1ebe5b;
+}
+
+/* ======= SECCIÓN DONAR ======= */
+.seccion-donar {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.seccion-donar h2 {
+  font-size: 2.2rem;
+  color: #8B0000;
+  margin-bottom: 20px;
+}
+
+.intro-donar {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.info-transferencia p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.galeria-donacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.galeria-donacion img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje-final {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #006400;
+  margin-top: 20px;
+}
+
+/* ======= VISTA AMPLIADA DE IMÁGENES DONAR ======= */
+.img-popup {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.img-popup:hover {
+  transform: scale(1.05);
+}
+
+/* ===== MODAL PARA AMPLIAR IMÁGENES ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+/* Estilo general de las flechas */
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Flecha izquierda (anterior) */
+.flecha.anterior {
+  left: 20px;
+}
+
+/* Flecha derecha (siguiente) */
+.flecha.siguiente {
+  right: 20px;
+}
+
+/* === CUADRO DE MENSAJE PARA WHATSAPP DESPUÉS DE DONAR === */
+.mensaje-wsp {
+  background-color: #e6f4ea; /* Fondo verde claro */
+  border-left: 5px solid #34af23; /* Borde verde más fuerte al costado */
+  padding: 15px 20px; /* Espaciado interno */
+  margin-top: 20px; /* Separación de lo de arriba */
+  border-radius: 10px; /* Esquinas redondeadas */
+  font-size: 16px;
+  color: #000; /* Texto en negro */
+}
+
+/* Estilo para el enlace dentro del mensaje de WhatsApp */
+.mensaje-wsp a {
+  color: #1b8f37; /* Verde oscuro */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mensaje-wsp a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* ===== Estilos para Sección Ayuda de Amor ===== */
+.ayuda-amor {
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.ayuda-amor h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #b22222; /* Rojo oscuro */
+}
+
+.ayuda-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.ayuda-item {
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.ayuda-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ayuda-item:hover img {
+  transform: scale(1.05);
+}
+
+.ayuda-sumate {
+  margin-top: 40px;
+  background-color: #e3fce2;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2e7d32;
+}
+
+.ayuda-sumate h3 {
+  margin-bottom: 10px;
+  color: #006400;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+.ayuda-sumate .btn-wsp {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ayuda-sumate .btn-wsp:hover {
+  background-color: #1ebe5c;
+}
+
+/* ===== Estilos para Evangelismo ===== */
+
+.portada-evangelismo {
+  position: relative;
+  background: url('./imagenes/evangelismo-portada.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.portada-evangelismo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.portada-evangelismo h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.seccion-evangelismo {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.seccion-evangelismo h2 {
+  font-size: 2.2rem;
+  color: #b22222;
+  margin-bottom: 15px;
+}
+
+.versiculo {
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #444;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.estadisticas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; /* un poco más de espacio entre los cuadros */
+  margin-bottom: 40px;
+}
+
+.estadistica {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  max-width: 280px; /* más ancho */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.estadistica:hover {
+  transform: scale(1.05);
+}
+
+.estadistica i {
+  font-size: 2.8rem; /* más grande el ícono */
+  margin-bottom: 15px;
+}
+
+.estadistica h3 {
+  margin-bottom: 8px;
+  color: #b22222;
+  font-size: 1.5rem;
+}
+
+.estadistica p {
+  font-size: 1rem;
+}
+
+
+.imagenes-evangelismo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.imagenes-evangelismo img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.imagenes-evangelismo img:hover {
+  transform: scale(1.05);
+}
+
+.contacto-evangelismo {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #e1fce1;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-evangelismo h3 {
+  color: #b22222;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.contacto-evangelismo .btn-wsp {
+  background-color: #25d366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.contacto-evangelismo .btn-wsp:hover {
+  background-color: #1ebe5d;
+}
+
+/* ===== SECCIÓN EVENTOS FAMILIARES ===== */
+.eventos-familia {
+  padding: 50px 20px; /* Espaciado interno arriba y a los costados */
+  background-color: #f9f9f9; /* Fondo claro para diferenciar */
+  text-align: center; /* Centra el contenido */
+}
+
+.eventos-familia h2 {
+  font-size: 2rem; /* Tamaño grande del título */
+  color: #2c3e50; /* Color oscuro azulado */
+  margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+.bloques-eventos {
+  display: flex; /* Alinea en fila */
+  flex-wrap: wrap; /* Permite que se acomoden en varias filas en pantallas chicas */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 30px; /* Espacio entre los bloques */
+}
+
+.bloque-evento {
+  background-color: #fff; /* Fondo blanco de cada bloque */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 300px; /* Ancho máximo */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+  transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+.bloque-evento:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.bloque-evento img {
+  width: 100%; /* Que la imagen ocupe todo el ancho del bloque */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+  height: 200px; /* Altura fija */
+  object-fit: cover; /* Recorta la imagen si no entra */
+}
+
+.bloque-evento h3 {
+  font-size: 1.2rem; /* Tamaño de subtítulo */
+  color: #b22222; /* Rojo fuerte */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.bloque-evento p {
+  font-size: 0.95rem; /* Tamaño normal de párrafo */
+  color: #333; /* Gris oscuro */
+}
+
+/* ===== PORTADA FAMILIA AJUSTADA ===== */
+.portada-familia {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.portada-familia img {
+  width: 85%;          /* Cambialo a 70%, 80%, lo que quieras */
+  max-width: 1000px;   /* Tope en pantallas grandes */
+  height: auto;        /* Importante para que no se deforme */
+  border-radius: 12px;
+}
+
+.portada-familia .overlay {
+  display: none; /* No usamos overlay si la imagen es clara */
+}
+
+.portada-familia h1 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  z-index: 2;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+/* ===== ESTILOS INFO FAMILIA ===== */
+.familia-info {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.familia-info h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.familia-info p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.frase-biblica {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 30px auto;
+  color: #2a7f3c; /* verde bíblico lindo */
+  max-width: 90%;
+}
+
+
+/* ===== BLOQUES DE FAMILIA ===== */
+.bloques-familia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.bloque {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.bloque:hover {
+  transform: scale(1.05);
+}
+
+.bloque img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.bloque h3 {
+  color: #b22222;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.bloque p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ===== CONTACTO WHATSAPP ===== */
+.contacto-familia {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contacto-familia h3 {
+  font-size: 1.6rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.contacto-familia p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contacto-familia .btn-wsp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-familia .btn-wsp:hover {
+  background-color: #1ebe5d;
+}
+
+/* ===== ESTILOS EVENTOS FAMILIARES ===== */
+.eventos-familia {
+  background-color: #fff0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.eventos-familia h2 {
+  font-size: 2rem;
+  color: #800000; /* Bordó */
+  margin-bottom: 30px;
+}
+
+.bloques-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bloque-evento {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.bloque-evento:hover {
+  transform: scale(1.05);
+}
+
+.bloque-evento img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.bloque-evento h3 {
+  color: #b22222;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.bloque-evento p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ===== EVENTOS FAMILIARES ===== */
+.eventos-familia {
+  padding: 50px 20px;
+  background-color: #fff5f5;
+  text-align: center;
+}
+
+.eventos-familia h2 {
+  font-size: 2rem;
+  color: #800000; /* Bordó */
+  margin-bottom: 30px;
+}
+
+.bloques-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.bloque-evento {
+  background-color: #ffeef0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bloque-evento:hover {
+  transform: scale(1.05);
+}
+
+.bloque-evento img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.bloque-evento h3 {
+  color: #b22222;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.bloque-evento p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ===== BLOQUE DE INFO "CUIDANDO LO MÁS VALIOSO" CON CUADRO ===== */
+.cuadro-familia {
+  background-color: #fff0f0;
+  padding: 30px 20px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.separador-familia {
+  margin-bottom: 50px;
+}
+
+/* ===== EFECTO HOVER CUADROS BLOQUES DE EDADES ===== */
+.bloques-familia .bloque {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cuando pasás el mouse encima, se agranda un poco */
+.bloques-familia .bloque:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===== EFECTO HOVER CUADROS EVENTOS FAMILIARES ===== */
+.bloques-eventos .bloque-evento {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Agrandado suave al pasar el mouse */
+.bloques-eventos .bloque-evento:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== MODAL PARA AMPLIAR IMAGEN ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* === MENÚ REFUGIO RESPONSIVO === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0e0f31;
+  color: white;
+}
+
+.top-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-logo img.logo-img {
+  height: 50px;
+}
+
+.top-logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* === MENÚ HAMBURGUESA === */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: red; /* Cambiamos a rojo como el logo */
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+/* Estilo cuando el menú está cerrado */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Estilo para el logo y encabezado */
+.top-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.top-logo h1 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+/* Responsive para celular */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    z-index: 1001;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .navbar.mostrar {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #eee;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .portada {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  max-height: 500px; /* o el valor que vos quieras */
+  overflow: hidden;
+}
+
+
+
+ .imagen-portada {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+  .texto-portada {
+  position: absolute;
+  bottom: 100px; /* 🔽 Ajustá este valor para bajarla */
+  left: 20px;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: none;
+  z-index: 2;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+  .redes-portada {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.versiculo-destacado {
+  padding: 25px 40px;
+  text-align: center;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 2px solid #eee; /* línea suave abajo */
+}
+
+.versiculo-destacado .verso {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #7b1f1f;
+  margin-bottom: 10px;
+}
+
+.versiculo-destacado .cita {
+  font-weight: bold;
+  color: #600000;
+  font-size: 1.1rem;
+}
+
+/* ======== AJUSTES SOLO PARA CELULAR ======== */
+@media screen and (max-width: 768px) {
+  .cuadros-bienvenida {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cuadro {
+    width: 95%;
+    max-width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+  }
+
+  .cuadro img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .cuadro h3 {
+    font-size: 1.2rem;
+    word-break: break-word;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .slider-novedades {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .slider-novedades img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .slider p {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
