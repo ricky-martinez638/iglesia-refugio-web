@@ -2243,6 +2243,7 @@ html, body {
 }
 
 /* ======== AJUSTES SOLO PARA CELULAR ======== */
+
 @media screen and (max-width: 768px) {
   .cuadros-bienvenida {
     flex-direction: column;
@@ -2251,30 +2252,36 @@ html, body {
   }
 
   .cuadro {
-    width: 90%;
-    max-width: 95%;
+    width: 95%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .cuadro img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
   }
 
   .cuadro h3 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     word-break: break-word;
+    margin-top: 10px;
   }
 
   .slider-novedades {
     padding: 20px;
-    max-width: 95%;
-  }
-
-  .slider {
     max-width: 100%;
   }
 
+  .slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
   .slider p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
   }
 }
-
-
-
-
-
